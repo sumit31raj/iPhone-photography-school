@@ -22,9 +22,9 @@ In this task we need to create a page with popup effect without using any third 
 - NPM >= 5
 - Node >= 8.5.x 
 
-* : When install PHP >= 7.2.5, generally those modules will auto install and enable on system, but some time those modules will not install or enable on system due to server permission/setting issues so we need to install manually.
+(*) : When install PHP >= 7.2.5, generally those modules will auto install and enable on system, but some time those modules will not install or enable on system due to server permission/setting issues so we need to install manually.
 
-Make Sure Composer is intalled in system. 
+Make Sure Composer is installed in system. 
 
 ## Installation Process
 
