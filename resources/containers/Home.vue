@@ -1,6 +1,23 @@
 <script>
+  import modal from './../components/Modal.vue';   
   export default {
-    name: 'home'
+    name: 'home',
+    components: {
+      modal,
+    },
+    data () {
+      return {
+        isModalVisible: false,
+      };
+    },
+    methods: {
+      showModal() {
+        this.isModalVisible = true;
+      },
+      closeModal() {
+        this.isModalVisible = false;
+      }
+    }
   }
 </script>
 
@@ -43,7 +60,8 @@
 				  </div>
 				</div>
 					<div class="right--side--bar">
-						<button type="button" class="btn btn--send btn--block">Send Me The Tips</button>
+						<button type="button" class="btn btn--send btn--block" @click="showModal">Send Me The Tips</button>
+						<modal v-show="isModalVisible" @close="closeModal"/>
 					</div>
 			</div>
 		</div>
